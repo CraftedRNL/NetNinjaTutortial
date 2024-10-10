@@ -140,3 +140,4 @@
 // let result = ninjas.push('ken');
 //  result = ninjas.pop('');
 // console.log(result);
+//fix
