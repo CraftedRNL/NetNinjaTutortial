@@ -85,5 +85,72 @@
 //     console.log('password is not strong enough');
 // }
 
+// Logical Not (!)
+
+// let user = false;
+
+// if(!user){
+//     console.log("You must be logged in to continue");   
+// }
+// console.log(!true);
+// console.log(!false);
 
 
+// break and continue
+
+// const scores = [50, 25, 0, 30, 100, 20, 10];
+
+// for(let i = 0; i< scores.length; i++){
+
+//     if(scores[i] === 0){
+//         continue;
+//     }
+//     console.log('your score: ', scores[i]);
+
+//     if(scores[i] === 100) {
+//         console.log('congrats, you got the top score!');
+//         break;
+//     }
+// }
+
+// switch statements
+// const grade = '50';
+
+// switch (grade) {
+//     case "50":
+//         console.log('You got an A!');
+//         break;
+//     case 'B':
+//         console.log('You got an B!');
+//         break;
+//     case 'C':
+//         console.log('You got an C!');
+//         break;
+//     case 'D':
+//         console.log('You got an D!');
+//         break;
+//     case 'E':
+//         console.log('You got an E!');
+//         break;
+//     default:
+//         console.log('not a valid grade');
+//         break;
+// }
+
+// vars & block scope
+const age = 30;
+
+
+if(true){
+    const age = 40;
+    const name = 'shaun';
+    console.log('inside 1st cost block ', age, name);
+
+    if(true) {
+        const age = 50;
+        console.log('inside 2nd code block: ', age);
+        var test = 'hello'
+    }
+}
+
+console.log('outside code block: ', age, name, test);
